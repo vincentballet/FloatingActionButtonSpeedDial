@@ -413,11 +413,10 @@ public class SpeedDialView extends ConstraintLayout implements CoordinatorLayout
 
     private static float getLayoutAngle(List<FabWithLabelView> fabWithLabelView, int position) {
         int numberOfItems = fabWithLabelView.size();
-        if (numberOfItems == 0) {
-            return 0f;
+        if (numberOfItems == 2) {
+            return (position == 0) ? 330f : 30f;
         } else {
-            float segmentSize = 180f / numberOfItems;
-            return (segmentSize * position + 270 + segmentSize / 2) % 360;
+            return 0f;
         }
     }
 
