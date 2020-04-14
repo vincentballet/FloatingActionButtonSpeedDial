@@ -32,6 +32,6 @@
     </style>
 
     <style name="SpeedDial.FabLabelStyle" parent="SpeedDial.Base.FabLabelStyle">
-        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 </resources>
