@@ -415,7 +415,10 @@ public class SpeedDialView extends ConstraintLayout implements CoordinatorLayout
         int numberOfItems = fabWithLabelView.size();
         if (numberOfItems == 2) {
             return (position == 0) ? 330f : 30f;
-        } else {
+        } else if (numberOfItems == 3) {
+            return (position == 0) ? 315f : ((position == 1) ? 0f : 45f);
+        }
+        else {
             return 0f;
         }
     }
