@@ -919,7 +919,7 @@ public class SpeedDialView extends ConstraintLayout implements CoordinatorLayout
         floatingActionButton.setLayoutParams(layoutParams);
         floatingActionButton.setClickable(true);
         floatingActionButton.setFocusable(true);
-        floatingActionButton.setSize(FloatingActionButton.SIZE_NORMAL);
+        floatingActionButton.setSize(FloatingActionButton.SIZE_MINI);
         floatingActionButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(final View view) {
